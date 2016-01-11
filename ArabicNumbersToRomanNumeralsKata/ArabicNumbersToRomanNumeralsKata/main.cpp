@@ -23,6 +23,10 @@ int main()
 	cout << ArabicToRomanNumeral->ConvertToRomanNumeral(9) << endl;
 	ArabicToRomanNumeral->m_sRomanNumeralOuput.clear();
 
+	// Test case #4
+	cout << "Test case #4: ";
+	cout << ArabicToRomanNumeral->ConvertToRomanNumeral(1066) << endl;
+	ArabicToRomanNumeral->m_sRomanNumeralOuput.clear();
 
 	delete ArabicToRomanNumeral;
 
