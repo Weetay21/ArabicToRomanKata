@@ -119,7 +119,6 @@ Converter::Converter()
 
  int Converter::ConvertOneToArabicNumber(string _inputString)
  {
-	
 	 if (_inputString[0] == (char)'I')
 	 {
 		 m_nArabicNumberOutput += 1;
@@ -128,3 +127,16 @@ Converter::Converter()
 
 	 return m_nArabicNumberOutput;
  }
+
+ int Converter::ConvertRomanNumeralToArabicNumber(string _inputString)
+ {
+	 for (int i = 0; i < _inputString.size(); ++i)
+	 {
+		 if (_inputString[i] == (char)'I')
+		 {
+			 m_nArabicNumberOutput += 1;
+		 }
+	 }
+	 return m_nArabicNumberOutput;
+ }
+

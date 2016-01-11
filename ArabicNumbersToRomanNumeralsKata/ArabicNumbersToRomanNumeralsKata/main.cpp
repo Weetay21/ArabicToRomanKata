@@ -42,9 +42,12 @@ int main()
 	// Test case #1 Roman numeral to Arabic
 	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
 	cout << "Test case #1: ";
-	cout << ArabicToRomanNumeral->ConvertOneToArabicNumber("I");
+	cout << ArabicToRomanNumeral->ConvertOneToArabicNumber("I") << endl;
 	
-	
+	// Test case #2 Roman numeral to Arabic
+	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
+	cout << "Test case #2: ";
+	cout << ArabicToRomanNumeral->ConvertRomanNumeralToArabicNumber("III") << endl;
 
 	cout << "\n\n\n";
 
