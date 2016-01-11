@@ -4,7 +4,7 @@
 Converter::Converter()
 {
 	m_nInputNumber = 0;
-
+	m_nArabicNumberOutput = 0;
 	m_sRomanNumeralOuput.clear();
 }
 
@@ -117,3 +117,14 @@ Converter::Converter()
  }
 
 
+ int Converter::ConvertOneToArabicNumber(string _inputString)
+ {
+	
+	 if (_inputString[0] == (char)'I')
+	 {
+		 m_nArabicNumberOutput += 1;
+	 }
+
+
+	 return m_nArabicNumberOutput;
+ }
