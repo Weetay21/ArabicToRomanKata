@@ -16,6 +16,8 @@ public:
 
 	
 	 string ConvertOneToRomanNumeral(int _inputNumber);
+	 string ConvertThreeToRomanNumeral(int _inputNumber);
+	 string ConvertToRomanNumeral(int _inputNumber);
 
 };
 

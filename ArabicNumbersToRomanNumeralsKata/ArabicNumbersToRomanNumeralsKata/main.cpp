@@ -11,6 +11,18 @@ int main()
 	Converter *ArabicToRomanNumeral = new Converter();
 	cout << "Test case #1: ";
 	cout << ArabicToRomanNumeral->ConvertOneToRomanNumeral(1) << endl;
+	ArabicToRomanNumeral->m_sRomanNumeralOuput.clear();
+
+	//Test case #2
+	cout << "Test case #2: ";
+	cout <<  ArabicToRomanNumeral->ConvertThreeToRomanNumeral(3) << endl;
+	ArabicToRomanNumeral->m_sRomanNumeralOuput.clear();
+
+	// Test case #3
+	cout << "Test case #3: ";
+	cout << ArabicToRomanNumeral->ConvertToRomanNumeral(9) << endl;
+	ArabicToRomanNumeral->m_sRomanNumeralOuput.clear();
+
 
 	delete ArabicToRomanNumeral;
 
