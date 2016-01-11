@@ -28,9 +28,21 @@ int main()
 	cout << ArabicToRomanNumeral->ConvertToRomanNumeral(1066) << endl;
 	ArabicToRomanNumeral->m_sRomanNumeralOuput.clear();
 
-	delete ArabicToRomanNumeral;
+	// Test case #5
+	cout << "Test case #5: ";
+	cout << ArabicToRomanNumeral->ConvertToRomanNumeral(1989) << endl;
+	ArabicToRomanNumeral->m_sRomanNumeralOuput.clear();
 
+	delete ArabicToRomanNumeral;
 	cout << "\n\n\n";
+
+
+
+
+
+
+
+
 	system("pause");
 	return 0;
 };
