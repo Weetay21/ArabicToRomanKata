@@ -51,9 +51,13 @@ int main()
 
 	// Test case #3 Roman numeral to Arabic
 	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
-	cout << "Test case ##: ";
+	cout << "Test case #3: ";
 	cout << ArabicToRomanNumeral->ConvertRomanNumeralToArabicNumber("IX") << endl;
 
+	// Test case #4 Roman numeral to Arabic
+	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
+	cout << "Test case #4: ";
+	cout << ArabicToRomanNumeral->ConvertRomanNumeralToArabicNumberRefactored("MLXVI") << endl;
 
 	cout << "\n\n\n";
 

@@ -25,7 +25,7 @@ public:
 	// Functions to convert from Roman Numeral to Arabic numbers
 	int ConvertOneToArabicNumber(string _inputString);
 	int ConvertRomanNumeralToArabicNumber(string _inputString);
-
+	int ConvertRomanNumeralToArabicNumberRefactored(string _inputString);
 };
 
 

@@ -132,6 +132,7 @@ Converter::Converter()
  {
 	 for (int i = 0; i < _inputString.size(); ++i)
 	 {
+		
 		 if (_inputString[i + 1] == (char) "X")
 		 {
 			 m_nArabicNumberOutput += 9;
@@ -143,5 +144,42 @@ Converter::Converter()
 		 }
 	 }
 	 return m_nArabicNumberOutput;
+ }
+
+int Converter::ConvertRomanNumeralToArabicNumberRefactored(string _inputString)
+ {
+	 for (int i = 0; i < _inputString.size(); ++i)
+	 {
+		 if (_inputString[i] == (char)'M')
+		 {
+			 m_nArabicNumberOutput += 1000;
+		 }
+		 if (_inputString[i] == (char)'D')
+		 {
+			 m_nArabicNumberOutput += 500;
+		 }
+		 if (_inputString[i] == (char)'C')
+		 {
+			 m_nArabicNumberOutput += 100;
+		 }
+		 if (_inputString[i] == (char)'L')
+		 {
+			 m_nArabicNumberOutput += 50;
+		 }
+		 if (_inputString[i] == (char) 'X')
+		 {
+			 m_nArabicNumberOutput += 10;
+		 }
+		 if (_inputString[i] == (char) 'V')
+		 {
+			 m_nArabicNumberOutput += 5;
+		 }
+		 if (_inputString[i] == (char)'I')
+		 {
+			 m_nArabicNumberOutput += 1;
+		 }
+	 }
+	 return m_nArabicNumberOutput;
+
  }
 
