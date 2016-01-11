@@ -49,6 +49,11 @@ int main()
 	cout << "Test case #2: ";
 	cout << ArabicToRomanNumeral->ConvertRomanNumeralToArabicNumber("III") << endl;
 
+	// Test case #3 Roman numeral to Arabic
+	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
+	cout << "Test case ##: ";
+	cout << ArabicToRomanNumeral->ConvertRomanNumeralToArabicNumber("IX") << endl;
+
 
 	cout << "\n\n\n";
 

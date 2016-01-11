@@ -130,12 +130,16 @@ Converter::Converter()
 
  int Converter::ConvertRomanNumeralToArabicNumber(string _inputString)
  {
-	 for (int i = 0; i <= _inputString.size(); ++i)
+	 for (int i = 0; i < _inputString.size(); ++i)
 	 {
-		
-		 if (_inputString[i] == (char)'I')
+		 if (_inputString[i + 1] == (char) "X")
 		 {
-				 m_nArabicNumberOutput += 1;
+			 m_nArabicNumberOutput += 9;
+			 i++;
+		 }
+		 else if (_inputString[i] == (char)'I')
+		 {
+			 m_nArabicNumberOutput += 1;
 		 }
 	 }
 	 return m_nArabicNumberOutput;
