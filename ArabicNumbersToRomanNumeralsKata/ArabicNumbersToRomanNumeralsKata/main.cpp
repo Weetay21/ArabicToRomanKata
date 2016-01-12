@@ -9,7 +9,7 @@ int main()
 {
 	// Test case #1 Arabic to Roman numeral
 	Converter *ArabicToRomanNumeral = new Converter();
-	
+	cout << "Arabic To Roman Numeral:" << endl;
 
 	cout << "Test case #1: ";
 	cout << ArabicToRomanNumeral->ConvertOneToRomanNumeral(1) << endl;
@@ -39,30 +39,38 @@ int main()
 	cout << "\n\n\n";
 
 	
+
+	cout << "Roman Numeral To Arabic:" << endl;
+	Converter *RomanNumeralToArabic = new Converter();
 	// Test case #1 Roman numeral to Arabic
-	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
+	RomanNumeralToArabic->m_nArabicNumberOutput = 0;
 	cout << "Test case #1: ";
-	cout << ArabicToRomanNumeral->ConvertOneToArabicNumber("I") << endl;
+	cout << RomanNumeralToArabic->ConvertOneToArabicNumber("I") << endl;
 	
 	// Test case #2 Roman numeral to Arabic
-	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
+	RomanNumeralToArabic->m_nArabicNumberOutput = 0;
 	cout << "Test case #2: ";
-	cout << ArabicToRomanNumeral->ConvertRomanNumeralToArabicNumber("III") << endl;
+	cout << RomanNumeralToArabic->ConvertRomanNumeralToArabicNumber("III") << endl;
 
 	// Test case #3 Roman numeral to Arabic
-	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
+	RomanNumeralToArabic->m_nArabicNumberOutput = 0;
 	cout << "Test case #3: ";
-	cout << ArabicToRomanNumeral->ConvertRomanNumeralToArabicNumber("IX") << endl;
+	cout << RomanNumeralToArabic->ConvertRomanNumeralToArabicNumber("IX") << endl;
 
 	// Test case #4 Roman numeral to Arabic
-	ArabicToRomanNumeral->m_nArabicNumberOutput = 0;
+	RomanNumeralToArabic->m_nArabicNumberOutput = 0;
 	cout << "Test case #4: ";
-	cout << ArabicToRomanNumeral->ConvertRomanNumeralToArabicNumberRefactored("MLXVI") << endl;
+	cout << RomanNumeralToArabic->ConvertRomanNumeralToArabicNumberRefactored("MLXVI") << endl;
+
+	// Test case #5 Roman numeral to Arabic
+	RomanNumeralToArabic->m_nArabicNumberOutput = 0;
+	cout << "Test case #5: ";
+	cout << RomanNumeralToArabic->ConvertRomanNumeralToArabicNumberRefactored("MCMLXXXIX") << endl;
 
 	cout << "\n\n\n";
 
 
-
+	delete RomanNumeralToArabic;
 
 	system("pause");
 	return 0;
